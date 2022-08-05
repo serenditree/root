@@ -1,31 +1,38 @@
 # Serenditree
 
 ## About
-This is the parent project and starting point for Serenditree.
+This is the parent repository and starting point for Serenditree.
+
+## Stack
+The abstract painting below is a non-exhaustive overview of the technology stack and shows the high level architecture of 
+Serenditree.
+
+![technology stack and high level architecture](assets/serenditree-stack.svg "stack")
 
 ## Development
 
 ### Environment
 In the following steps `$_ST_HOME` refers to the root folder containing all submodules. If you clone into a folder
- called `Serenditree` you will get the following structure:
+called `Serenditree` you will get the following structure:
 
 ```
 Serenditree/
 ├── .git
 ├── .gitmodules
 ├── README.md
+├── assets
 ├── branch
 ├── leaf
 └── stem
 ```
 
 The source is structured as follows:
-- **Stem**: Command-line interface for development and operations. Building images and running containers for
-   the database, messaging and map services is done here.
-- **Branch**: The Java EE backend.
-- **Leaf**: The Angular frontend.
+- **[stem](https://github.com/serenditree/stem)**: Command-line interface for development and operations. Setting up clusters, 
+  building images and running containers for databases, messaging and map services is done here.
+- **[branch](https://github.com/serenditree/branch)**: The Java EE backend.
+- **[leaf](https://github.com/serenditree/leaf)**: The Angular frontend.
 
-Serenditree includes a command-line interface (CLI) at `$_ST_HOME/stem/cli.sh`. For convenience, you should add an 
+Serenditree includes a command-line interface (sc) at `$_ST_HOME/stem/cli.sh`. For convenience, you should add an 
 alias to your `~/.bashrc`. Otherwise, you have to replace `sc` with `$_ST_HOME/stem/cli.sh` whenever you see it!
 
 ```sh
@@ -41,8 +48,8 @@ git clone \
     --remote-submodules \
     git@github.com:serenditree/root.git \
     $_ST_HOME
-sc git 'checkout dev'
-sc git 'pull --ff-only'
+sc git -- checkout dev
+sc git -- pull --ff-only
 ```
 
 ### Install tools
@@ -50,25 +57,39 @@ For initial image building and running the local development stack you will need
 ```sh
 sudo dnf install -y podman buildah git jq
 ```
-Until base images are not in a public repository, you also need the yarn repo for building the node builder image.
+For building the node builder image need the yarn repo.
 ```sh
 sudo curl -L https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
 ```
-For cluster installation, images and interaction you will need:
+For cluster-{installation,images,interaction} you will need:
 ```sh
 sudo dnf install -y tkn skopeo jq pass
 # install crc
 sc cluster install
 ```
-Your pass password store needs the following items:
+For the complete set of actions you would need:
 ```
+argbash argocd buildah crc exo git helm jq kubectl minishift oc openshift-install pass podman skopeo terraform tkn
+```
+
+Your `pass` password store needs the following items:
+```
+> pass serenditree
 serenditree
+├── argocd
+├── contact
 ├── crc.testing
 ├── data.url
 ├── github.com
 ├── json.web.key
+├── oidc
+│   ├── at.id
+│   ├── at.secret
+│   ├── at.url
+│   ├── de.id
+│   ├── de.secret
+│   └── de.url
 ├── quay.io
-├── registry.redhat.io
 ├── root.seed
 ├── root.seed.root
 ├── root.user
@@ -76,6 +97,6 @@ serenditree
 ```
 
 ### Before building
+- Run `sc status -a`! It will check for issues in your environment. 
 - Make sure a local maven repository exists! (``mkdir -p ~/.m2/repository``)
-- If you want to use Red Hat base images you need a developer subscription and an access token available at ``pass serenditree/registry.redhat.io``. Otherwise you have to set the environment variable ``_ST_FROM=centos``.
 
