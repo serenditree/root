@@ -3,11 +3,11 @@
 ## About
 This is the parent repository and starting point for Serenditree.
 
-## Stack
+## Overview
 The abstract painting below is a non-exhaustive overview of the technology stack and shows the high level architecture of 
 Serenditree.
 
-![technology stack and high level architecture](assets/serenditree-stack.svg "stack")
+![technology stack and high level architecture](assets/serenditree-overview.svg "overview")
 
 ## Development
 
@@ -64,8 +64,6 @@ sudo curl -L https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
 For cluster-{installation,images,interaction} you will need:
 ```sh
 sudo dnf install -y tkn skopeo jq pass
-# install crc
-sc cluster install
 ```
 For the complete set of actions you would need:
 ```
