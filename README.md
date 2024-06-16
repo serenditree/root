@@ -57,17 +57,13 @@ For initial image building and running the local development stack you will need
 ```sh
 sudo dnf install -y podman buildah git jq
 ```
-For building the node builder image need the yarn repo.
-```sh
-sudo curl -L https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
-```
 For cluster-{installation,images,interaction} you will need:
 ```sh
 sudo dnf install -y tkn skopeo jq pass
 ```
 For the complete set of actions you would need:
 ```
-argbash argocd buildah crc exo git helm jq kubectl minishift oc openshift-install pass podman skopeo terraform tkn
+argbash argocd buildah cilium crc exo git helm jq kubectl oc openshift-install pass podman skopeo terraform tkn xxd yarnpkg
 ```
 
 Your `pass` password store needs the following items:
