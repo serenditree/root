@@ -71,11 +71,14 @@ Your `pass` password store needs the following items:
 > pass serenditree
 serenditree
 ├── argocd
-├── contact
-├── crc.testing
-├── data.url
-├── github.com
-├── json.web.key
+├── backup@exoscale.com.access (created by terraform)
+├── backup@exoscale.com.secret (created by terraform)
+├── contact (email address for let's encrypt)
+├── crc.testing (optional code ready containers)
+├── data@exoscale.com.access (created by terraform)
+├── data@exoscale.com.secret (created by terraform)
+├── github.com (for tekton)
+├── json.web.key (openssl rand -base64 64 | tr -d "\n")
 ├── oidc
 │   ├── at.id
 │   ├── at.secret
@@ -83,11 +86,18 @@ serenditree
 │   ├── de.id
 │   ├── de.secret
 │   └── de.url
-├── quay.io
-├── root.seed
-├── root.seed.root
-├── root.user
-└── root.user.root
+├── openshift.com (optional)
+├── quay.io (to push images)
+├── registry.redhat.io (optional)
+├── root.seed (username:password)
+├── root.seed.root (root password)
+├── root.user (username:password)
+├── root.user.root (root password)
+├── scaler@exoscale.com.access (created by terraform)
+├── scaler@exoscale.com.secret (created by terraform)
+├── serenditree@exoscale.com.access
+├── serenditree@exoscale.com.secret
+└── tekton (webhook for slack integration)
 ```
 
 ### Before building
