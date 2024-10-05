@@ -63,7 +63,7 @@ sudo dnf install -y tkn skopeo jq pass
 ```
 For the complete set of actions you would need:
 ```
-argbash argocd buildah cilium crc exo git helm jq kubectl oc openshift-install pass podman skopeo terraform tkn xxd yarnpkg
+argbash argocd buildah cilium crc exo git helm jq kubectl oc openshift-install pass podman skopeo terraform tkn yarnpkg
 ```
 
 Your `pass` password store needs the following items:
