@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="613.01691"
+   height="699.92865"
+   viewBox="0 0 24.520676 27.997146"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="nginx.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41625"
+     inkscape:cx="306.79612"
+     inkscape:cy="349.86761"
+     inkscape:window-width="2560"
+     inkscape:window-height="1364"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title1">file_type_nginx</title>
+  <path
+     d="m 12.206624,0 h 0.065 a 10.418,10.418 0 0 1 0.972,0.528 q 5.429,3.122 10.858,6.246 a 0.792,0.792 0 0 1 0.414,0.788 c -0.008,4.389 0,8.777 -0.005,13.164 a 0.813,0.813 0 0 1 -0.356,0.507 q -5.773,3.324 -11.547,6.644 a 0.587,0.587 0 0 1 -0.657,0.037 Q 6.1706244,24.6 0.40162439,21.274 a 0.7,0.7 0 0 1 -0.4,-0.666 q 0,-6.582 0,-13.163 a 0.693,0.693 0 0 1 0.387,-0.67 Q 5.8106244,3.657 11.232624,0.535 c 0.322,-0.184 0.638,-0.379 0.974,-0.535"
+     style="fill:#019639"
+     id="path1" />
+  <path
+     d="m 5.0256244,8.538 q 0,5.429 0,10.859 a 1.509,1.509 0 0 0 0.427,1.087 1.647,1.647 0 0 0 2.06,0.206 1.564,1.564 0 0 0 0.685,-1.293 c 0,-2.62 -0.005,-5.24 0,-7.86 q 3.5829996,4.29 7.1809996,8.568 a 2.833,2.833 0 0 0 2.6,0.782 1.561,1.561 0 0 0 1.251,-1.371 q 0.008,-5.541 0,-11.081 a 1.582,1.582 0 0 0 -3.152,0 c 0,2.662 -0.016,5.321 0,7.982 -2.346,-2.766 -4.663,-5.556 -6.9999996,-8.332 a 2.817,2.817 0 0 0 -2.649,-1.052 1.579,1.579 0 0 0 -1.403,1.505 z"
+     style="fill:#ffffff"
+     id="path2" />
+</svg>

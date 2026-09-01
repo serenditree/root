@@ -1,0 +1,9 @@
+[submodule "trunk"]
+	path = trunk
+	url = git@github.com:serenditree/trunk.git
+[submodule "branch"]
+	path = branch
+	url = git@github.com:serenditree/branch.git
+[submodule "leaf"]
+	path = leaf
+	url = git@github.com:serenditree/leaf.git
